@@ -1,6 +1,6 @@
-# EC2 Key Pairs (AWS CLI)
+# EC2 Key Pairs (AWS)
 
-## Create RSA key pair and save private key locally
+## Create (RSA) and download private key (CLI)
 mkdir -p ~/.ssh/aws
 aws ec2 create-key-pair \
   --key-name <key-name> \
@@ -17,4 +17,4 @@ aws ec2 delete-key-pair --key-name <key-name>
 
 ## Notes
 - Never commit .pem files to Git.
-- Ensure your AWS CLI region is correct.
+- Ensure your AWS region is correct.
